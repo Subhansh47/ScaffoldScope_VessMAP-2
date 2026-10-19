@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+models/*.pt
+data/vessmap/**
+!data/vessmap/images/.gitkeep
+!data/vessmap/masks/.gitkeep

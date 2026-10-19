@@ -1,0 +1,13 @@
+SCAFFOLDSCOPE ON MACOS
+
+1) Extract this ZIP and open the ScaffoldScope_VessMAP folder in VS Code.
+2) In VS Code choose Terminal > New Terminal.
+3) Run: chmod +x setup_mac.sh train_mac.sh start_app_mac.sh
+4) Run: ./setup_mac.sh
+5) Prepare training data (see README.md): images go in data/vessmap/images and matching binary masks go in data/vessmap/masks. Each image needs a corresponding mask with the same filename stem.
+6) Run: ./train_mac.sh 20
+7) Run: ./start_app_mac.sh
+8) Open the local URL printed by Streamlit, normally http://localhost:8765.
+
+No trained weights or dataset are included. Do not expect predictions until training has completed and created models/scaffoldscope_unet.pt.
+Windows .bat files are included for Windows users only; do not run them on macOS.
